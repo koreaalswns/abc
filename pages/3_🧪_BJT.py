@@ -17,7 +17,7 @@ default_params = {
 }
 
 
-st.sidebar.header("Adjust Input Characteristics Parameters")
+st.sidebar.header("⚙️ BJT 파라미터")
 I_S = st.sidebar.slider("Saturation Current (I_S, pA)", 0.001, 1.0, default_params["I_S"], step=0.001)
 V_T = st.sidebar.slider("Thermal Voltage (V_T, V)", 0.01, 0.05, default_params["V_T"], step=0.001)
 V_CB_min = st.sidebar.slider("Min Collector-Base Voltage (V_CB, V)", 0, 20, default_params["V_CB_min"], step=1)
