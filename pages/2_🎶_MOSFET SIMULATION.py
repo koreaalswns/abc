@@ -87,7 +87,7 @@ def calculate_id(Vgs, Vds, W, L, N_D, N_A):
     Cox = 2.3e-8  # 산화막 캐패시턴스 (F/cm^2)
     W_cm = W * 1e-4  # µm to cm
     L_cm = L * 1e-4  # µm to cm
-    mu_eff = mu_eff_selected * (N_D / N_A)  # 이동도에 농도 영향을 반영
+    mu_eff = mu_eff_selected  # 이동도에 농도 영향을 반영
     if Vgs < 1.0:  # 임계 전압 Vth
         return 0
     elif Vds < Vgs - 1.0:
