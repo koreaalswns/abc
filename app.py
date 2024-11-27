@@ -690,13 +690,13 @@ elif st.session_state.selected_device == "MOSFET_DESC":
             if st.button("이전"):
                 if st.session_state['step'] > 0:
                     st.session_state['step'] -= 1
-                    st.experimental_rerun()
+                    st.experimental_set_query_params(rerun="true")
 
         with col3:
             if st.button("다음"):
                 if st.session_state['step'] < len(steps_description) - 1:
                     st.session_state['step'] += 1
-                    st.experimental_rerun()
+                    st.experimental_set_query_params(rerun="true")
 
         st.write('</div>', unsafe_allow_html=True)
 
