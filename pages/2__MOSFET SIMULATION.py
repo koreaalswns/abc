@@ -5,7 +5,7 @@ import streamlit.components.v1 as components
 
 # MOSFET 3D 시뮬레이터
 st.markdown("<h1 style='text-align: center; color: #000000;'>MOSFET 시뮬레이터</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center; color: #555;'>MOSFET 동작 특성을 시뮬레이션하고 시각화합니다.</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: #555;'>V_T=1.0V, T=300K.</p>", unsafe_allow_html=True)
 
 st.sidebar.header("⚙️ MOSFET 파라미터")
 st.sidebar.markdown("---")
