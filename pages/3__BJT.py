@@ -5,7 +5,6 @@ import streamlit.components.v1 as components
 
 # BJT 시뮬레이터
 
-st.title("BJT Common-Base Configuration Simulator")
 
 default_params = {
     "I_S": 1e-14,
