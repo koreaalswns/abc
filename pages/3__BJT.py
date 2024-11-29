@@ -29,7 +29,7 @@ col1, col2 = st.columns(2)
 
 # Input Characteristics
 with col1:
-    st.subheader("Input Characteristics")
+    st.subheader("입력 특성 곡선")
     fig, ax = plt.subplots()
     V_BE_values = np.linspace(0, 1, 200)
     V_CB_values = np.linspace(V_CB_min, V_CB_max, 3)
@@ -47,7 +47,7 @@ with col1:
 
 # Output Characteristics
 with col2:
-    st.subheader("Output Characteristics")
+    st.subheader("출력 특성 곡선")
     fig, ax = plt.subplots()
     V_CB_values = np.linspace(0, 10, 200)
     I_E_values = np.linspace(I_E_min, I_E_max, 3)
