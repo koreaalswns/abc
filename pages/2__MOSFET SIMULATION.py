@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import streamlit.components.v1 as components
 
 # MOSFET 3D 시뮬레이터
+st.title("MOSFET 시뮬레이션")
 
 st.sidebar.header("⚙️ MOSFET 파라미터")
 st.sidebar.markdown("---")
