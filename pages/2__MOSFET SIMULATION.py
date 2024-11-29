@@ -11,7 +11,7 @@ st.sidebar.header("⚙️ MOSFET 파라미터")
 st.sidebar.markdown("---")
 W = st.sidebar.slider("채널 폭 (W) [µm]", 0.1, 20.0, 1000.0, step=0.5)
 L = st.sidebar.slider("채널 길이 (L) [µm]", 0.01, 20.0, 10.0, step=0.5)
-Vgs = st.sidebar.slider("Gate-Source Voltage (Vgs) [V]", 0.0, 5.0, 1.5, step=0.1)
+Vgs = st.sidebar.slider("Gate-Source Voltage (Vgs) [V]", 0.0, 5.0, 1.0, step=0.1)
 
 N_A = st.sidebar.slider(
 "p형 도핑 농도 (cm^-3)", 
