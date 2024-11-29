@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import streamlit.components.v1 as components
 
 # BJT 시뮬레이터
+st.markdown("<h1 style='text-align: center; color: #000000;'>BJT 시뮬레이션</h1>", unsafe_allow_html=True)
 
 
 default_params = {
@@ -17,8 +18,8 @@ default_params = {
 
 
 st.sidebar.header("⚙️ BJT 파라미터")
-I_S = st.sidebar.slider("Saturation Current (I_S, pA)", 0.001, 1.0, default_params["I_S"], step=0.001)
-V_T = st.sidebar.slider("Thermal Voltage (V_T, V)", 0.01, 0.05, default_params["V_T"], step=0.001)
+I_S = st.sidebar.slider("포화전류 (I_S, pA)", 0.001, 1.0, default_params["I_S"], step=0.001)
+V_T = st.sidebar.slider("열전압 (V_T, V)", 0.01, 0.05, default_params["V_T"], step=0.001)
 V_CB_min = st.sidebar.slider("Min Collector-Base Voltage (V_CB, V)", 0, 20, default_params["V_CB_min"], step=1)
 V_CB_max = st.sidebar.slider("Max Collector-Base Voltage (V_CB, V)", 0, 20, default_params["V_CB_max"], step=1)
 I_E_min = st.sidebar.slider("Min Emitter Current (I_E, A)", 1e-4, 0.01, default_params["I_E_min"], step=1e-4, format="%.4f")
