@@ -21,7 +21,7 @@ N_D_selected = st.sidebar.slider(
 "n형 도핑 농도 (cm^-3)", 
 min_value=1e13, max_value=1e20, value=1e19, format="%.1e"
 )
-T = st.sidebar.slider("온도 (K)", min_value=100, max_value=500, value= 300, step=10)
+T = 300
 Vds_values = np.linspace(0, 5, 100)
 
 # 도핑 농도 및 온도 범위 생성
