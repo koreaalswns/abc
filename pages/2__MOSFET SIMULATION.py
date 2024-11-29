@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import streamlit.components.v1 as components
 
 # MOSFET 3D 시뮬레이터
-st.markdown("<h1 style='text-align: center; color: #000000;'>MOSFET 시뮬레이터</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #000000;'>MOSFET 시뮬레이션</h1>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: center;'>Vt = 1V, T = 300K</h2>", unsafe_allow_html=True)
 
 st.sidebar.header("⚙️ MOSFET 파라미터")
